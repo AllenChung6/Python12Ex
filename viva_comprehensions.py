@@ -51,10 +51,14 @@ def gen_dict(start: int, stop: int, strategy: Callable) -> Dict:
     :param strategy:
     :return:
     """
-    pass
+
 
 
 def gen_set(val_in: str) -> Set:
+
+    gen = {string.upper() for string in val_in if string == string.lower()}
+    return gen
+
     """
     Oh no some evil developer decided not to write docstrings. Maybe you can use the test cases to decipher
     what this method was supposed to do. Hey if you do, maybe you could do some good in this world by
@@ -63,4 +67,3 @@ def gen_set(val_in: str) -> Set:
     :param val_in:
     :return:
     """
-    pass
